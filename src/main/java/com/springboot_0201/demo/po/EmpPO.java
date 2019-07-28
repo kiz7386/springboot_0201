@@ -17,7 +17,7 @@ public class EmpPO {
 
     @Id
     @Column(name = "EMPNO" , nullable = false , length = 24)
-    private Integer empno;
+    private String empno;
 
     @Column(name = "ENAME" , nullable = false )
     private String ename;
@@ -37,11 +37,11 @@ public class EmpPO {
     @Column(name = "DEPTNO" , nullable = false)
     private Integer deptno;
 
-    public Integer getEmpno() {
+    public String getEmpno() {
         return empno;
     }
 
-    public void setEmpno(Integer empno) {
+    public void setEmpno(String empno) {
         this.empno = empno;
     }
 
